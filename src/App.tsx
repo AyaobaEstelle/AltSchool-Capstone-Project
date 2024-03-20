@@ -5,11 +5,13 @@ import { Login } from './routes/Login';
 import { Dashboard } from './routes/Dashboard';
 import { LinkDetails } from './routes/link-details';
 import { CreateLink } from './routes/create-link';
+import { Home } from './routes/home';
 
 const App = () => {
   return (
     <div>
       <Routes>
+      <Route path='/' element={<Home/>} />
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/dashboard/links/:linkId' element={<LinkDetails />} />
         <Route path='/dashboard/links/create' element={<CreateLink />} />
