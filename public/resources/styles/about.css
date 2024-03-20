@@ -1,0 +1,36 @@
+/* outline: 1px solid red; */
+.about__stats {
+  width: 100%;
+  background: var(--blue-50);
+  padding: 3em 6em;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 4em;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.about_description {
+  font-size: 2.5rem;
+}
+.about_description_highlight {
+  color: var(--blue-300);
+}
+
+.about__stats__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3em;
+}
+
+.about__stat {
+  display: flex;
+  flex-direction: column;
+}
+.about__stat__value {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.about__stat__text {
+  font-size: 0.8rem;
+  width: 80%;
+}

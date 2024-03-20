@@ -1,0 +1,143 @@
+@import url("/resources/styles/hero.css");
+@import url("/resources/styles/about.css");
+@import url("/resources/styles/why.css");
+@import url("/resources/styles/pricing.css");
+@import url("/resources/styles/make_link.css");
+@import url("/resources/styles/faq.css");
+@import url("/resources/styles/cta.css");
+@import url("/resources/styles/footer.css");
+
+html {
+  font-family: Gilroy;
+}
+:root {
+  --black: rgba(20, 20, 20, 1);
+  --blue-300: rgba(0, 101, 254, 1);
+  --blue-400: rgba(0, 90, 226, 1);
+  --blue-10: rgba(254, 254, 254, 0.1);
+  --blue-50: rgba(249, 251, 253, 1);
+  --white: rgba(255, 255, 255, 1);
+  --blue-100: rgba(50, 132, 255, 0.13);
+  --grey: rgba(214, 214, 214, 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  min-width: 100vw;
+  overflow-x: hidden;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.button {
+  border: 1px solid var(--blue-300);
+  background: var(--blue-300);
+  color: var(--white);
+  padding: 0.5em 2em;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+.button--inverted {
+  border: 1px solid var(--blue-300);
+  color: var(--blue-300);
+  padding: 0.5em 2em;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.with_decoration {
+  position: relative;
+}
+.with_decoration:before {
+  content: "";
+  width: 5px;
+  height: 90%;
+  background: linear-gradient(
+    to bottom,
+    rgba(17, 34, 50, 1),
+    rgba(77, 107, 136, 0) /* transparent */
+  );
+  position: absolute;
+  top: 0;
+  left: -15px;
+}
+
+input,
+select {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: inherit;
+  text-indent: 1em;
+  display: inline-block;
+  width: 100%;
+  height: 55px;
+  font-size: 0.75rem;
+  border-radius: 12px;
+  border: 1px solid var(--blue-300);
+  background: transparent;
+}
+input::placeholder {
+  color: inherit;
+}
+
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='9' viewBox='0 0 14 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L7 7.5L13 1.5' stroke='%233284FF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 2em top 50%;
+}

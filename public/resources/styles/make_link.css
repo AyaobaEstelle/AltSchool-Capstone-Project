@@ -1,0 +1,46 @@
+.make_link {
+  padding-block: 3em;
+  background: linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%),
+    no-repeat top left / 66% 100% url("/resources/img/make-link-left.png"),
+    no-repeat bottom right / 66% 100% url("/resources/img/make-link-right.png");
+  background-blend-mode: screen;
+  display: grid;
+  place-content: center;
+}
+.make_link__form {
+  width: max-content;
+  max-width: min(476px, 33vw);
+  margin-block: auto;
+  color: var(--blue-300);
+  background: var(--white);
+  padding: 2.5em 2em;
+  border-radius: 12px;
+  display: grid;
+  grid-template-areas:
+    "url url"
+    "domain alias"
+    "button button"
+    "footer footer";
+  row-gap: 2em;
+  column-gap: 1em;
+}
+.make_link__form [name="url"] {
+  grid-area: url;
+}
+.make_link__form [name="domain"] {
+  grid-area: domain;
+}
+.make_link__form [name="alias"] {
+  grid-area: alias;
+}
+.make_link_button {
+  grid-area: button;
+}
+
+.make_link__form footer {
+  font-size: 0.875rem;
+  grid-area: footer;
+}
+.make_link__form footer a {
+  font-weight: bold;
+}

@@ -1,0 +1,101 @@
+/* outline: 1px solid red; */
+.pricing {
+  margin-block: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pricing__title {
+  width: min(570px, 60vw);
+  margin-block: auto;
+  display: grid;
+  grid-auto-rows: 1fr;
+}
+
+.pricing__title h3 {
+  display: inline-block;
+  font-size: 2.5rem;
+}
+.pricing__title_highlight {
+  color: var(--blue-300);
+}
+.pricing__subtitle {
+  text-align: center;
+}
+
+.pricing__cards {
+  display: flex;
+  align-items: center;
+  margin-block-start: 3em;
+}
+.pricing__card {
+  padding: 1em 3em;
+  padding-block-end: 2em;
+  border: 0.5px solid var(--blue-400);
+  /* Drop shadow */
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+}
+
+.pricing__card:first-of-type {
+  border-right-color: transparent;
+  border-radius: 12px 0 0 12px;
+}
+.pricing__card:last-of-type {
+  border-left-color: transparent;
+  border-radius: 0 12px 12px 0;
+}
+
+.pricing_card__name {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.pricing_card__price {
+  margin-block-start: 1em;
+  font-weight: bold;
+  font-size: 2.5rem;
+  display: block;
+}
+.pricing_card__description {
+  font-size: 1.25rem;
+}
+
+.pricing_card__features {
+  display: block;
+  margin-block-start: 1.5em;
+  font-size: 0.875em;
+  list-style-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_252)'%3E%3Cpath d='M14.6667 7.38668V8.00001C14.6659 9.43763 14.2003 10.8365 13.3396 11.9879C12.4788 13.1393 11.2689 13.9817 9.89025 14.3893C8.51163 14.7969 7.03818 14.7479 5.68966 14.2497C4.34113 13.7515 3.18978 12.8307 2.40732 11.6247C1.62485 10.4187 1.2532 8.99205 1.34779 7.55755C1.44239 6.12305 1.99815 4.75756 2.9322 3.66473C3.86625 2.57189 5.12853 1.81027 6.5308 1.49344C7.93307 1.17662 9.40019 1.32157 10.7133 1.90668' stroke='%23005AE2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.6667 2.66666L8 9.33999L6 7.33999' stroke='%23005AE2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_252'%3E%3Crect width='16' height='16' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  transform: translateX(1.25em);
+}
+.pricing_card__features li {
+  padding-inline-start: 0.9em;
+}
+.pricing_card__features li:not(:first-of-type) {
+  margin-block-start: 1em;
+}
+.pricing__card.pricing__card--active {
+  color: var(--white);
+  background-color: red;
+  background: linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%);
+  /* Drop shadow */
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+  border-color: transparent;
+  padding: 6em 4em;
+  border-radius: 12px;
+}
+
+.pricing__card--active .pricing_card__price {
+  margin-block-start: 0.5em;
+}
+.pricing__card--active .pricing_card__features {
+  list-style-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_316)'%3E%3Cpath d='M14.6667 7.38668V8.00001C14.6658 9.43763 14.2003 10.8365 13.3396 11.9879C12.4788 13.1393 11.2689 13.9817 9.89023 14.3893C8.51162 14.7969 7.03817 14.7479 5.68964 14.2497C4.34112 13.7515 3.18976 12.8307 2.4073 11.6247C1.62484 10.4187 1.25319 8.99205 1.34778 7.55755C1.44237 6.12305 1.99813 4.75756 2.93218 3.66473C3.86623 2.57189 5.12852 1.81027 6.53079 1.49344C7.93306 1.17662 9.40017 1.32157 10.7133 1.90668' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.6667 2.66666L8 9.33999L6 7.33999' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_316'%3E%3Crect width='16' height='16' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+.pricing__cta {
+  margin-block-start: 3em;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}

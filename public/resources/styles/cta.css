@@ -1,0 +1,18 @@
+.cta {
+  padding-block-start: 6em;
+  padding-block-end: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  background: linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%),
+    no-repeat top left / 47% 100% url("/resources/img/cta-left.png"),
+    no-repeat bottom right / 40% 100% url("/resources/img/cta-right.png");
+  background-blend-mode: screen;
+  gap: 2em;
+}
+
+.cta h3 {
+  font-size: 2.5rem;
+}
