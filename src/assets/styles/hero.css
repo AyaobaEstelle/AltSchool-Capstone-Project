@@ -1,0 +1,121 @@
+.hero {
+  width: 100%;
+  background: url("/resources/img/aurora.png") no-repeat center top;
+  background-size: 100% 70%;
+}
+.hero__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 6em;
+}
+
+.hero__nav {
+  font-size: 1.125rem;
+  display: flex;
+  align-items: baseline;
+  gap: 2em;
+}
+
+.hero__nav__item {
+  font-weight: medium;
+}
+.hero__nav__item--active {
+  color: var(--blue-300);
+}
+
+.hero__nav__item--dropdown {
+  font-weight: medium;
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.hero__action {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+.hero__action_link {
+  color: var(--blue-300);
+}
+
+.hero__text {
+  width: fit-content;
+  margin-inline: auto;
+  margin-block-start: 5em;
+}
+.hero__title {
+  line-height: 2;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+}
+.hero__title--highlight {
+  color: var(--blue-300);
+  position: relative;
+}
+.hero__title--highlight:after {
+  content: "";
+  background: url("data:image/svg+xml,%3Csvg width='174' height='21' viewBox='0 0 174 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M162.517 0.905029C75.1007 1.58333 17.7488 11.4833 0 16.3486L9.28502 15.694L2.32125 17.9693L10.2135 17.6848L6.03526 19.3913L12.0705 20.8133C52.0748 16.4528 149.09 6.6406 173.63 5.2387L155.524 4.88668C165.556 3.5543 166.666 3.60686 166.666 3.60686C166.666 3.60686 162.517 2.61145 162.517 0.905029Z' fill='%23005AE2'/%3E%3C/svg%3E%0A")
+    bottom center no-repeat;
+  position: absolute;
+  width: 180px;
+  height: 50%;
+  bottom: -0.3em;
+  left: 20%;
+}
+
+.hero__subtitle {
+  margin-block-start: 2em;
+  text-align: center;
+}
+
+.hero__cta {
+  margin-inline: auto;
+  margin-block: 3em;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  font-weight: bold;
+}
+.hero__cta--link {
+  color: var(--blue-300);
+}
+
+.hero__frame {
+  width: fit-content;
+  margin-inline: auto;
+  margin-block: 3em;
+  position: relative;
+}
+.hero__frame__svg {
+  position: absolute;
+  top: -20px;
+  left: -10px;
+}
+.hero__frame__content {
+  background: var(--blue-10);
+  border: 0.5px solid var(--blue-400);
+  border-radius: 24px;
+  padding: 2em;
+  backdrop-filter: blur(106px);
+}
+.hero__frame__content p {
+  width: 60%;
+  margin-inline: auto;
+}
+.hero__art {
+  transform: translateY(5px);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: url("data:image/svg+xml,%3Csvg width='1440' height='93' viewBox='0 0 1440 93' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M201.516 9.70664C217.021 3.29808 233.634 0 250.411 0H1186.9C1203.48 0 1219.89 3.21974 1235.24 9.48037L1440 93H0L201.516 9.70664Z' fill='%23F8F7F7'/%3E%3C/svg%3E%0A")
+    center 100%;
+}
