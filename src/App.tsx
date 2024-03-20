@@ -6,6 +6,7 @@ import { Dashboard } from './routes/Dashboard';
 import { LinkDetails } from './routes/link-details';
 import { CreateLink } from './routes/create-link';
 import { Home } from './routes/home';
+import { Footer } from './components/common/footer';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path='sign-up' element={<SignUp />} />
         </Route>
       </Routes>
+      <Footer />
     </div>
   )
 }
