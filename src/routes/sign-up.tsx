@@ -1,8 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { TextInput } from "../components/common/inputs";
 import { FormEventHandler, useState } from "react";
-import { GoogleAuthProvider } from "firebase/auth/cordova";
-import { browserSessionPersistence, createUserWithEmailAndPassword, getAuth, setPersistence, signInWithPopup } from "firebase/auth";
+import { browserSessionPersistence, createUserWithEmailAndPassword, getAuth, setPersistence, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import toast from "react-hot-toast";
 
 export const SignUp = () => {
