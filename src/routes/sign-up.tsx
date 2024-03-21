@@ -125,7 +125,7 @@ export const SignUp = () => {
             placeholder="Retype Password" />
         </div>
         <p className="text-neutral-400 font-medium text-[11px] md:text-xs block w-full mt-2">6 or more characters, one number, one uppercase & one lower case</p>
-        <button className="text-neutral-white bg-primary-400 rounded-full py-4 mt-8 mb-4 font-medium text-[14px] w-full">Sign up with Email</button>
+        <button disabled={status === "loading"} type="submit" className="text-neutral-white bg-primary-400 rounded-full py-4 my-4 font-medium text-[14px] w-full disabled:opacity-70">Sign up with Email</button>
       </form>
       <Link to="/auth/login"
         className="text-primary-400 font-medium text-[14px] block w-full text-center my-4">
